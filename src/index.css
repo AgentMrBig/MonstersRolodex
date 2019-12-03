@@ -11,44 +11,56 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background: linear-gradient(270deg, #a4e1d1, #4487d5);
+  background: linear-gradient(356deg, #99cec0, #1b3fb0);
   background-size: 400% 400%;
 
-  -webkit-animation: BgAnimation 0s ease infinite;
-  -moz-animation: BgAnimation 0s ease infinite;
-  animation: BgAnimation 0s ease infinite;
+  -webkit-animation: bgAnimation 6s ease infinite;
+  -moz-animation: bgAnimation 6s ease infinite;
+  -o-animation: bgAnimation 6s ease infinite;
+  animation: bgAnimation 6s ease infinite;
 
-  @-webkit-keyframes BgAnimation {
+  @-webkit-keyframes bgAnimation {
     0% {
-      background-position: 0% 50%;
+      background-position: 49% 0%;
     }
     50% {
-      background-position: 100% 50%;
+      background-position: 52% 100%;
     }
     100% {
-      background-position: 0% 50%;
+      background-position: 49% 0%;
     }
   }
-  @-moz-keyframes BgAnimation {
+  @-moz-keyframes bgAnimation {
     0% {
-      background-position: 0% 50%;
+      background-position: 49% 0%;
     }
     50% {
-      background-position: 100% 50%;
+      background-position: 52% 100%;
     }
     100% {
-      background-position: 0% 50%;
+      background-position: 49% 0%;
     }
   }
-  @keyframes BgAnimation {
+  @-o-keyframes bgAnimation {
     0% {
-      background-position: 0% 50%;
+      background-position: 49% 0%;
     }
     50% {
-      background-position: 100% 50%;
+      background-position: 52% 100%;
     }
     100% {
-      background-position: 0% 50%;
+      background-position: 49% 0%;
+    }
+  }
+  @keyframes bgAnimation {
+    0% {
+      background-position: 49% 0%;
+    }
+    50% {
+      background-position: 52% 100%;
+    }
+    100% {
+      background-position: 49% 0%;
     }
   }
 }
