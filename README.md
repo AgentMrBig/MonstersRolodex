@@ -1,6 +1,6 @@
 # MonstersRolodex
 
-<img src="sample.png" width="400">
+<img style="margin: auto;" src="sample.png" width="400">
 
 First project in a series from Udemy Complete React Developer 2020 course.
 
