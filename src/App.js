@@ -2,6 +2,17 @@ import React, { Component } from 'react';
 import { CardList } from './components/card-list/card-list.component';
 import { SearchBox } from './components/search-box/search-box.component';
 import './App.css';
+import styled from 'styled-components';
+
+const StyledApp = styled.div`
+  text-align: center;
+`;
+
+const TitleH1 = styled.h1`
+  font-family: 'Bigelow Rules';
+  font-size: 72px;
+  color: #0ccac4;
+`;
 
 class App extends Component {
   constructor(props) {
@@ -25,7 +36,8 @@ class App extends Component {
     );
 
     return (
-      <div className="App">
+      <StyledApp>
+        <TitleH1> Monsters Rolodex </TitleH1>
         <SearchBox
           placeholder="search monsters"
           handleChange={e => {
@@ -33,7 +45,7 @@ class App extends Component {
           }}
         />
         <CardList monsters={filteredMonsters}></CardList>
-      </div>
+      </StyledApp>
     );
   }
 }

@@ -8,6 +8,7 @@ const SearchInput = styled.input`
   padding: 10px;
   line-height: 30px;
   margin-bottom: 30px;
+  text-align: center;
 `;
 
 export const SearchBox = ({ placeholder, handleChange }) => (
